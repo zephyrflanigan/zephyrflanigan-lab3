@@ -54,8 +54,8 @@ public class WordCounter{
             //Asks to try again if file does not exist, retries with new file
             Scanner myObj = new Scanner(System.in);
             System.out.println("file could not be opened. Please try again: ");
-            String file = myObj.nextLine();
-            BufferedReader reader = new BufferedReader(new FileReader(file));
+            s = myObj.nextLine();
+            BufferedReader reader = new BufferedReader(new FileReader(s));
             line = reader.readLine();
         }
         
